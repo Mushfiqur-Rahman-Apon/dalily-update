@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    position:sticky;
+    top:0;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color:#00bcd4;
+}
+
+/* Header */
+header{
+    text-align:center;
+    padding:100px 20px;
+    background:#222;
+    color:white;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#00bcd4;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* Sections */
+section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.skill-box span{
+    display:inline-block;
+    background:#00bcd4;
+    color:white;
+    padding:8px 15px;
+    margin:5px;
+    border-radius:5px;
+}
+
+/* Project */
+.project-card{
+    background:white;
+    margin:20px auto;
+    padding:20px;
+    width:80%;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.btn-small{
+    display:inline-block;
+    margin:10px 5px;
+    padding:8px 15px;
+    background:#111;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.btn-small.live{
+    background:#00bcd4;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:10px;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .project-card{
+        width:95%;
+    }
+}
